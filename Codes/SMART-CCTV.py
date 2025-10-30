@@ -7,7 +7,7 @@ import requests
 import json
 from azure.iot.device import IoTHubDeviceClient, Message
 
-AZURE_ENDPOINT = "https://whatever.cognitiveservices.azure.com/"
+AZURE_ENDPOINT = "endpoint name"
 AZURE_KEY = "API key here"
 VISION_URL = AZURE_ENDPOINT + "vision/v3.2/analyze?visualFeatures=Objects,Description"
 
@@ -62,4 +62,5 @@ while True:
                     break
             print("Face detection session ended.")
             cam.release()
+
             cv2.destroyAllWindows()
